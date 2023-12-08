@@ -1,0 +1,18 @@
+PS C:\Users\lebro\Documents\MSDS Online\DS 5100> C:/Users/lebro/anaconda3/python.exe "c:/Users/lebro/Documents/MSDS Online/DS 5100/montecarlo_test.py"
+test_combination_ct (__main__.TestAnalyzer.test_combination_ct) ... ok
+test_face_cts_per_roll (__main__.TestAnalyzer.test_face_cts_per_roll) ... ok
+test_init (__main__.TestAnalyzer.test_init) ... ok
+test_jackpot (__main__.TestAnalyzer.test_jackpot) ... ok
+test_permutation_ct (__main__.TestAnalyzer.test_permutation_ct) ... ok
+test_change_weight (__main__.TestDie.test_change_weight) ... ok
+test_init (__main__.TestDie.test_init) ... ok
+test_roll (__main__.TestDie.test_roll) ... ok
+test_show_state (__main__.TestDie.test_show_state) ... ok
+test_init (__main__.TestGame.test_init) ... ok
+test_play (__main__.TestGame.test_play) ... ok
+test_play_results (__main__.TestGame.test_play_results) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.049s
+
+OK
