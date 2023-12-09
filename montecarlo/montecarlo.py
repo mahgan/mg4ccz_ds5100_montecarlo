@@ -138,16 +138,12 @@ class Analyzer():
             """
             countSets = {}
             for r in range(len(self.game_results)):
-                #print(self.game_results.iloc[r])
                 roll = self.game_results.iloc[r]
                 newSet = tuple()
                 for i in range(len(roll)):
                     dieval = roll.iloc[i]
                     newSet += (dieval,)
-                    # print("newSet", newSet)
-                    # print("dieval ", dieval, " for roll: ", r)
                 combination = tuple(sorted(list(newSet)))
-                # print("combination for roll: ", r, combination)
                 if combination in countSets:
                     countSets[combination] += 1
                 else:
@@ -155,8 +151,6 @@ class Analyzer():
 
             df = pd.DataFrame.from_dict(countSets, orient='index', columns=['Count'])
             df.index = pd.MultiIndex.from_tuples(df.index)
-            #print(countSets)
-            #print(df)
 
             return df
         
@@ -167,7 +161,6 @@ class Analyzer():
             """           
             countSets = {}
             for r in range(len(self.game_results)):
-                #print(self.game_results.iloc[r])
                 roll = self.game_results.iloc[r]
                 combination = tuple()
                 for i in range(len(roll)):
@@ -179,10 +172,7 @@ class Analyzer():
                     countSets[combination] = 1
 
             df = pd.DataFrame.from_dict(countSets, orient='index', columns=['Count'])
-            #level_names = [f'Die{i + 1}' for i in range(num_dice)]
             df.index = pd.MultiIndex.from_tuples(df.index)
-            #print(countSets)
-            #print(df)
 
             return df
                 

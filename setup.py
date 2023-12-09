@@ -20,6 +20,6 @@ setup(
 
     packages=['montecarlo'],    
 
-    install_requires=['pandas','numpy', 'unittest']
+    install_requires=['pandas','numpy', 'unittest','matplotlib']
 
 )
